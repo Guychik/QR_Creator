@@ -16,9 +16,8 @@
 {% if qr %}
   <img id="barcode" src={{qr}} title="SHA256" width="500" height="500"/>
 {% else %}
-  <img src="https://academy.bit2me.com/wp-content/uploads/2018/07/18_Sha256-1.png" alt="placeholder" width="1024" height="512"/>
+  <img src="{{ url_for('static', filename= 'images/Sha256.png') }}" alt="placeholder" width="1024" height="512"/>
 {% endif %}
-
 
 </body>
 </html>
